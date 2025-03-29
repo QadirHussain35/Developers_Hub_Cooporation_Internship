@@ -1,15 +1,18 @@
 Titanic Dataset - Exploratory Data Analysis (EDA)
-📌 Overview
+
+ Overview
+
 This repository contains an Exploratory Data Analysis (EDA) of the Titanic Dataset.
 The goal is to analyze, clean, and visualize the dataset to gain insights into passenger survival trends.
 
-📁 Dataset
+Dataset
+
 The dataset contains passenger details like age, fare, gender, class, family size, and survival status.
 
-📌 Source: Titanic Dataset
+ Columns in the Dataset
 
-📝 Columns in the Dataset
 Feature	Description
+
 PassengerId	Unique identifier for each passenger
 Survived	Survival status (0 = No, 1 = Yes)
 Pclass	Ticket class (1st, 2nd, 3rd)
@@ -22,26 +25,30 @@ Ticket	Ticket number
 Fare	Ticket price
 Cabin	Cabin number (if assigned)
 Embarked	Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
-🛠️ Steps in EDA
-1️⃣ Data Cleaning
-✅ Handling Missing Values:
+Steps in EDA
+ 
+ Data Cleaning
+ 
+ Handling Missing Values:
 
 Filled missing numeric values (Age, Fare) with their median.
 
 Dropped remaining missing values (Embarked).
 
-✅ Duplicate Removal:
+ Duplicate Removal:
 
 Checked for duplicate records (none found).
 
-✅ Outlier Detection & Removal:
+
+Outlier Detection & Removal:
 
 Used boxplots & IQR method to detect outliers in Age, SibSp, Parch, and Fare.
 
 Removed extreme values while preserving meaningful data.
 
-2️⃣ Data Visualization
-📊 Bar Charts for Categorical Variables:
+ Data Visualization
+ 
+ Bar Charts for Categorical Variables:
 
 Survival Rate: More people did not survive.
 
@@ -51,7 +58,7 @@ Sex Distribution: More males than females.
 
 Embarkation Port: Majority from Southampton (S).
 
-📈 Histograms for Numeric Variables:
+Histograms for Numeric Variables:
 
 Age: Most passengers were aged 20-40 years.
 
@@ -59,7 +66,7 @@ SibSp & Parch: Majority had zero or one family member aboard.
 
 Fare: Highly skewed with some passengers paying very high ticket prices.
 
-🔥 Correlation Heatmap:
+Correlation Heatmap:
 
 Survival is highly correlated with class (higher-class passengers had better survival rates).
 
